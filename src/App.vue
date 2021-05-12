@@ -1,25 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+<div>
+  <sticky-header/>
+  <div>
+  </div>
+    <footer/>
+  </div>
+  
   <MetamaskLogin msg="Login using Metamask"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import MetamaskLogin from './components/MetamaskLogin.vue'
+
+import StickyHeader from './components/Header-Footer/Header.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    MetamaskLogin
+    StickyHeader
+
   }
 }
+
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Exo', 'Helvetica', 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
